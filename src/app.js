@@ -14,8 +14,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}))
 
 // Routes
-app.use('/products', require('./routes/products'));
-app.use('/carts', require('./routes/carts'));
+app.use('/products', require('./models/product'));
+// app.use('/carts', require('./models/cart'));
 // app.use('/productCreate', (req, res) =>{
 //     res.render('newProduct')
 // })
